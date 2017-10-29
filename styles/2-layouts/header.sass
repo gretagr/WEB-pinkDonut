@@ -29,7 +29,7 @@ header
     background: url("../images/donut.png"), $yellow
     background-repeat: no-repeat
     background-size: 150%
-    background-position: 100% bottom
+    background-position: 80% 80%
   .header-text-1
     display: flex
     align-items: flex-end
@@ -37,8 +37,9 @@ header
     grid-row: 1
     grid-column: 1
     @include header-media (phone-only)
-      font-size: 1em
-      align-items: center
+      font-size: 0.7em
+      align-items: flex-end
+      height: 20vh
     h1
       z-index: 6
       margin: 0 auto
@@ -49,6 +50,8 @@ header
     height: 40vh
     @include header-media (small-tablet-down)
       height: 20vh
+    @include header-media (phone-only)
+      height: 60vh
     .glasses-svg
       z-index: 3
       height: 150px
@@ -61,8 +64,8 @@ header
         padding-top: 20px
       @include header-media (phone-only)
         width: 90%
-        padding-top: 0
-        margin-top: -60px
+        //padding-top: 20px
+        //margin-top: -60px
   @include button
   .see-more-btn
     z-index: 5
@@ -72,7 +75,11 @@ header
     @include header-media (small-tablet-down)
       margin-top: -5vh
     @include header-media (phone-only)
-      margin-top: -10vh
+      grid-row: 3
+      height: 20vh
+      margin-top: 0
   .scroll-row
     grid-row: 4
     height: 25vh
+    @include header-media (phone-only)
+      height: 0

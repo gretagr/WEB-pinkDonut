@@ -191,7 +191,7 @@ header {
     background: url("../images/donut.png"), #FED418;
     background-repeat: no-repeat;
     background-size: 150%;
-    background-position: 100% bottom;
+    background-position: 80% 80%;
   }
 }
 
@@ -205,8 +205,9 @@ header .header-text-1 {
 
 @media (max-width: 600px) {
   header .header-text-1 {
-    font-size: 1em;
-    align-items: center;
+    font-size: 0.7em;
+    align-items: flex-end;
+    height: 20vh;
   }
 }
 
@@ -225,6 +226,12 @@ header .header-images-2 {
 @media (max-width: 780px) {
   header .header-images-2 {
     height: 20vh;
+  }
+}
+
+@media (max-width: 600px) {
+  header .header-images-2 {
+    height: 60vh;
   }
 }
 
@@ -251,8 +258,6 @@ header .header-images-2 .glasses-svg {
 @media (max-width: 600px) {
   header .header-images-2 .glasses-svg {
     width: 90%;
-    padding-top: 0;
-    margin-top: -60px;
   }
 }
 
@@ -304,13 +309,21 @@ header .see-more-btn {
 
 @media (max-width: 600px) {
   header .see-more-btn {
-    margin-top: -10vh;
+    grid-row: 3;
+    height: 20vh;
+    margin-top: 0;
   }
 }
 
 header .scroll-row {
   grid-row: 4;
   height: 25vh;
+}
+
+@media (max-width: 600px) {
+  header .scroll-row {
+    height: 0;
+  }
 }
 
 @font-face {
