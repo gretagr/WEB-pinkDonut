@@ -190,8 +190,8 @@ header {
   header {
     background: url("../images/donut.png"), #FED418;
     background-repeat: no-repeat;
-    background-size: 700px;
-    background-position: 100% 100%;
+    background-size: 150%;
+    background-position: 100% bottom;
   }
 }
 
@@ -205,10 +205,6 @@ header .header-text-1 {
 
 @media (max-width: 600px) {
   header .header-text-1 {
-    background: url("../images/tomatoe.png");
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: 170% 100%;
     font-size: 1em;
     align-items: center;
   }
