@@ -79,7 +79,9 @@ p {
   background: rgba(255, 213, 0, 0.7);
   opacity: 1;
   margin-top: 0;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all, .5s;
   transition: all, .5s;
 }
 
@@ -125,14 +127,20 @@ p {
 
 .top.hidden {
   margin-top: -200px;
-  transform: translate(0, -60);
+  -webkit-transform: translate(0, -60);
+          transform: translate(0, -60);
+  -webkit-transition: all, .5s;
   transition: all, .5s;
 }
 
 .top .top.visible {
   opacity: 1;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: background-color .3s, color .3s, -webkit-transform .2s;
+  transition: background-color .3s, color .3s, -webkit-transform .2s;
   transition: transform .2s, background-color .3s, color .3s;
+  transition: transform .2s, background-color .3s, color .3s, -webkit-transform .2s;
 }
 
 .menu-icon {
@@ -227,8 +235,12 @@ header {
 }
 
 header .header-text-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 30vh;
   grid-row: 1;
   grid-column: 1;
@@ -268,8 +280,12 @@ header .header-text-1 h1 {
 }
 
 header .header-images-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   grid-row: 2;
   min-height: 200px;
   height: 40vh;
@@ -404,8 +420,12 @@ header .lines .line2 {
 
 header .see-more-btn {
   z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-row: 3;
   height: 5vh;
   grid-column: 1;
@@ -427,7 +447,9 @@ header .see-more-btn {
 @media (max-height: 400px) and (max-width: 740px) {
   header .see-more-btn {
     height: 30vh;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -436,8 +458,12 @@ header .see-more-btn {
     grid-row: 3;
     height: 25vh;
     margin-top: 0;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -500,13 +526,15 @@ header .scroll-row {
   grid-row: 1;
   grid-column: 1;
   justify-self: end;
-  align-self: end;
+  -ms-flex-item-align: end;
+      align-self: end;
 }
 
 @media (max-width: 850px) {
   .services .block1 {
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -611,14 +639,16 @@ header .scroll-row {
 .services .block3 {
   grid-row: 1;
   grid-column: 3;
-  align-self: end;
+  -ms-flex-item-align: end;
+      align-self: end;
 }
 
 @media (max-width: 850px) {
   .services .block3 {
     grid-row: 3;
     grid-column: 1;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -677,7 +707,8 @@ header .scroll-row {
   text-align: center;
   grid-row: 4;
   line-height: 50px;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 .service-details p {
@@ -686,7 +717,8 @@ header .scroll-row {
   text-align: center;
   margin: 0 auto;
   padding-top: 20px;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 .service-details .services4 {
@@ -703,7 +735,8 @@ header .scroll-row {
 }
 
 .service-details .services6 {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   grid-row: 1/6;
   grid-column: 3;
   justify-items: center;
@@ -728,7 +761,8 @@ header .scroll-row {
     justify-items: center;
   }
   .service-details .services6 {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     grid-row: 3;
     grid-column: 1;
     justify-items: center;
@@ -785,7 +819,8 @@ header .scroll-row {
   grid-row: 1;
   grid-column: 3;
   justify-self: start;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 @media (max-width: 599px) {
@@ -873,8 +908,12 @@ header .scroll-row {
   padding-top: 60px;
   padding-bottom: 50px;
   grid-column: 1/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1040px) {
@@ -1018,13 +1057,15 @@ header .scroll-row {
   grid-row: 1;
   grid-column: 1;
   justify-self: end;
-  align-self: end;
+  -ms-flex-item-align: end;
+      align-self: end;
 }
 
 @media (max-width: 850px) {
   .about .skills1 .block1 {
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -1129,14 +1170,16 @@ header .scroll-row {
 .about .skills1 .block3 {
   grid-row: 1;
   grid-column: 3;
-  align-self: end;
+  -ms-flex-item-align: end;
+      align-self: end;
 }
 
 @media (max-width: 850px) {
   .about .skills1 .block3 {
     grid-row: 3;
     grid-column: 1;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -1145,7 +1188,9 @@ header .scroll-row {
   grid-template-columns: repeat(3, 1fr);
   padding-top: 120px;
   text-align: center;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 @media (max-width: 850px) {
@@ -1183,7 +1228,8 @@ header .scroll-row {
   max-width: 300px;
   text-align: center;
   padding-top: 20px;
-  align-self: end;
+  -ms-flex-item-align: end;
+      align-self: end;
   margin: 0 auto;
 }
 
@@ -1371,7 +1417,8 @@ header .scroll-row {
     grid-row: 5;
     grid-column: 1;
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -1516,7 +1563,9 @@ header .scroll-row {
   grid-row: 2;
   grid-column: 2;
   grid-template-columns: repeat(5, 1fr);
-  align-items: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   max-width: 400px;
 }
 
