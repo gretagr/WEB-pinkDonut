@@ -1,0 +1,82 @@
+@import "../3-modules/modules-dir"
+@import "../variables"
+@import "../fonts"
+@import "../mixins"
+header
+  display: grid
+  grid-template-columns: 1fr
+  max-width: 100%
+  min-height: 100vh
+  background: url("../images/donut.png"), url("../images/tomatoe.png"), $yellow
+  background-repeat: no-repeat
+  background-position: 5% 55%, 100% 45%
+  background-size: 600px, 550px
+  @include header-media (large-desktop-down)
+    background-position: -10% 60%, 120% 50%
+  @include header-media (medium-desktop-down)
+    background-size: 600px, 500px
+    background-position: -5% 80%, 120% 30%
+  @include header-media (small-desktop-down)
+    background-size: 650px, 550px
+    background-position: -5% 90%, 120% 10%
+  @include header-media (tablet-down)
+    background-size: 650px, 550px
+    background-position: -15% 100%, 140% 0%
+  @include header-media (small-tablet-down)
+    background-size: 650px, 400px
+    background-position: -100px 110%, 140% 0%
+  @include header-media (phone-only)
+    background: url("../images/donut.png"), $yellow
+    background-repeat: no-repeat
+    background-size: 700px
+    background-position: 100% 100%
+  .header-text-1
+    display: flex
+    align-items: flex-end
+    height: 30vh
+    grid-row: 1
+    grid-column: 1
+    @include header-media (phone-only)
+      background: url("../images/tomatoe.png")
+      background-repeat: no-repeat
+      background-size: 400px
+      background-position: 170% 100%
+      font-size: 1em
+      align-items: center
+    h1
+      z-index: 6
+      margin: 0 auto
+  .header-images-2
+    display: flex
+    justify-content: stretch
+    grid-row: 2
+    height: 40vh
+    @include header-media (small-tablet-down)
+      height: 20vh
+    .glasses-svg
+      z-index: 3
+      height: 150px
+      grid-row: 2
+      padding-top: 60px
+      margin: 0 auto
+      @include header-media (tablet-down)
+        height: 120px
+      @include header-media (small-tablet-down)
+        padding-top: 20px
+      @include header-media (phone-only)
+        height: 120px
+        padding-top: 0
+        margin-top: -60px
+  @include button
+  .see-more-btn
+    z-index: 5
+    grid-row: 3
+    height: 5vh
+    grid-column: 1
+    @include header-media (small-tablet-down)
+      margin-top: -5vh
+    @include header-media (phone-only)
+      margin-top: -10vh
+  .scroll-row
+    grid-row: 4
+    height: 25vh

@@ -1,0 +1,41 @@
+.top
+  z-index: 200
+  grid-row: 1
+  position: fixed
+  width: 100%
+  padding-top: 30px
+  padding-left: 60px
+  padding-bottom: 30px
+  background: rgba(255, 213, 0, 0.7)
+  opacity: 1
+  margin-top: 0
+  transform: translate(0, 0)
+  transition: all, .5s
+  @include media(tablet-medium-down)
+    padding-left: 0
+  @include media(for-responsive-menu)
+    display: none
+  ul
+    padding-left: 60px
+    @include media(tablet-medium-down)
+      padding-left: 0
+      text-align: center
+  li
+    display: inline
+    a
+      font-family: big-john
+      font-size: 16px
+      color: black
+      padding: 15px 24px 15px 24px
+      &:hover
+        color: $yellow
+        background: black
+        border-radius: 20px
+  &.hidden
+    margin-top: -200px
+    transform: translate(0, -60)
+    transition: all, .5s
+  .top.visible
+    opacity: 1
+    transform: translate(0, 0)
+    transition: transform .2s, background-color .3s, color .3s

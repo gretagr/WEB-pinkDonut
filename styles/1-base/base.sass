@@ -1,0 +1,38 @@
+@import "../3-modules/modules-dir"
+@import "../variables"
+@import "../fonts"
+@import "../mixins"
+*
+  margin: 0
+  padding: 0
+body
+  background: $grey
+  overflow-x: hidden
+button
+  outline: none
+  cursor: pointer
+input, textarea
+  outline: none
+  padding: 0 15px 0 15px
+textarea
+  padding-top: 15px
+a
+  text-decoration: none
+h1
+  font-size: 2.8em
+  letter-spacing: 2px
+  text-align: center
+h2
+  font-size: 2.6em
+h3
+  font-size: 2.4em
+h1, h4, h3, h2
+  font-family: big-john
+p
+  font-family: 'Open Sans', sans-serif
+  font-size: 0.9em
+@include media(tablet-medium-down)
+  p
+    max-width: 250px
+  h1
+    font-size: 2em

@@ -1,0 +1,70 @@
+@import "../3-modules/modules-dir"
+@import "../variables"
+@import "../fonts"
+@import "../mixins"
+.about
+  max-width: 80%
+  margin: 0 auto
+  padding-bottom: 60px
+  .skills1
+    @include heading-layout
+  .skills2
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    padding-top: 120px
+    text-align: center
+    align-items: start
+    @include media (small-tablet-and-phone)
+      padding-top: 40px
+    svg
+      height: 200px
+      @include media (tablet-medium-down)
+        height: 150px
+    h3, p
+      padding: 20px
+    h3
+      grid-row: 2
+      @include media (small-tablet-and-phone)
+        font-size: 2em
+    p
+      grid-row: 3
+      max-width: 300px
+      text-align: center
+      padding-top: 20px
+      align-self: end
+      margin: 0 auto
+    .block4
+      grid-row: 1/4
+      grid-column: 1
+      @include media(tablet-to-phone)
+        @include skills-layout-small
+    .block5
+      grid-row: 1/4
+      grid-column: 2
+      @include media(tablet-to-phone)
+        @include skills-layout-small
+    .block6
+      grid-row: 1/4
+      grid-column: 3
+      @include media(tablet-to-phone)
+        @include skills-layout-small
+  @include media(small-tablet-and-phone)
+    .skills2
+      grid-template-columns: 1fr
+      p
+        padding-bottom: 60px
+      .block4
+        grid-row: 1
+        grid-column: 1
+      .block5
+        grid-row: 2
+        grid-column: 1
+      .block6
+        grid-row: 3
+        grid-column: 1
+  @include media(tablet-landscape-down)
+  .about
+    max-width: 100%
+  @include media(phone-only)
+    .about
+      max-width: 80%

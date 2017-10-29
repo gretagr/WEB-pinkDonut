@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.4 258.1">
+  <circle fill="#FDF8FC" stroke="#F4F4F4" stroke-width="4" stroke-miterlimit="10" cx="138.9" cy="139.8" r="115.4"/>
+  <path fill="#FFF" stroke="#F4F4F4" stroke-width="4" stroke-miterlimit="10" d="M37.5 141c0 56 45.2 101.1 101.4 101.1S240.4 196 240.4 139.8 194 38 138 38v102l-100.5 1z"/>
+  <path fill="#D7D2D6" stroke="#000" stroke-width="4" stroke-miterlimit="10" d="M138 38c56 0 102.4 45.6 102.4 101.8S195.2 242.1 139 242.1 37.5 197 37.5 141h-14c0 64 51.8 115.1 115.8 115.1S254.4 203.9 254.4 140 202 24 138 24v14z"/>
+  <path fill="none" stroke="#000" stroke-width="4" stroke-miterlimit="10" d="M21 133h61M0 141h61M130 21v61M138 0v61"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.1 201.4">
+  <path fill="#FFF" d="M161 187.9c0 .3-.2.5-.5.5h-40c-.3 0-.5-.2-.5-.5v-39c0-.3.2-.5.5-.5h40c.3 0 .5.2.5.5v39z"/>
+  <path fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M161.5 188.4c0 .3-.2.5-.5.5h-40c-.3 0-.5-.2-.5-.5v-39c0-.3.2-.5.5-.5h40c.3 0 .5.2.5.5v39z"/>
+  <path fill="#FFF" d="M172 192.9c0 .3-.2.5-.5.5h-62c-.3 0-.5-.2-.5-.5v-10c0-.3.2-.5.5-.5h62c.3 0 .5.2.5.5v10z"/>
+  <path fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M172.5 193.4c0 .3-.2.5-.5.5h-62c-.3 0-.5-.2-.5-.5v-10c0-.3.2-.5.5-.5h62c.3 0 .5.2.5.5v10z"/>
+  <path fill="#FFF" d="M244 153.9c0 .3-.2.5-.5.5h-205c-.3 0-.5-.2-.5-.5V9.9c0-.3.2-.5.5-.5h205c.3 0 .5.2.5.5v144z"/>
+  <path fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M244.5 154.4c0 .3-.2.5-.5.5H39c-.3 0-.5-.2-.5-.5v-144c0-.3.2-.5.5-.5h205c.3 0 .5.2.5.5v144z"/>
+  <g>
+    <path fill="#E0E0E0" d="M233 122.9c0 .3-.2.5-.5.5h-183c-.3 0-.5-.2-.5-.5v-103c0-.3.2-.5.5-.5h183c.3 0 .5.2.5.5v103z"/>
+    <path fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M233.5 123.4c0 .3-.2.5-.5.5H50c-.3 0-.5-.2-.5-.5v-103c0-.3.2-.5.5-.5h183c.3 0 .5.2.5.5v103z"/>
+  </g>
+  <path fill="#FFF" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M141.8 143.7l-4.5-4.3 4.6-4.4 4.4 4.4z"/>
+</svg>

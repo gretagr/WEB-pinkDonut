@@ -1,0 +1,81 @@
+@import "../3-modules/modules-dir"
+@import "../variables"
+@import "../fonts"
+@import "../mixins"
+.works
+  display: grid
+  grid-template-columns: 4fr 1fr 4fr
+  .works1
+    grid-row: 1
+    grid-column: 1
+  .works2
+    grid-row: 1
+    grid-column: 2
+    svg
+      display: block
+      height: 200px
+      margin: 0 auto
+      path, rect
+        fill: none
+        stroke: black
+        stroke-width: 3
+      path
+        stroke-linecap: round
+    @include media(phone-only)
+      img
+        display: none
+  .works3
+    grid-row: 1
+    grid-column: 3
+    justify-self: start
+    align-self: start
+    @include media(phone-only)
+      grid-column: 1/4
+      justify-self: center
+      @include media(phone-only)
+        padding-bottom: 60px
+    h1
+      text-align: right
+      padding: 0
+    .line3, .line4
+      height: 3px
+      width: 300px
+      position: relative
+      background-color: black
+      @include media (small-tablet-and-phone)
+        width: 200px
+    .line3
+      margin-top: 10px
+      right: -30px
+      @include media (small-tablet-and-phone)
+        right: -15px
+    .line4
+      margin-top: 5px
+      left:  -30px
+      @include media (small-tablet-and-phone)
+        left: -15px
+.examples
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  max-width: 100%
+  @include media(tablet-medium-down)
+    grid-template-columns: 1fr 1fr
+  @include media(phone-only)
+    grid-template-columns: 1fr
+  img
+    display: block
+    margin: 0 auto
+    width: 100%
+  .hide
+    display: none
+  .see-more-btn
+    padding-top: 60px
+    padding-bottom: 50px
+    grid-column: 1/5
+    @include media(tablet-medium-down)
+      grid-column: 1/3
+    @include media(phone-only)
+      grid-column: 1/2
+    @include button
+    .see
+      background: $grey

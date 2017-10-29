@@ -1,0 +1,73 @@
+@import "variables"
+@mixin header-media($size)
+  @if $size == phone-only
+    @media (max-width: 600px)
+      @content
+  @else if $size == small-tablet-down
+    @media (max-width: 780px)
+      @content
+  @else if $size == tablet-down
+    @media (max-width: 900px)
+      @content
+  @else if $size == small-desktop-down
+    @media (max-width: 1080px)
+      @content
+  @else if $size == medium-desktop-down
+    @media (max-width: 1200px)
+      @content
+  @else if $size == large-desktop-down
+    @media (max-width: 1440px)
+      @content
+
+@mixin media($size)
+  @if $size == phone-only
+    @media (max-width: 599px)
+      @content
+  @else if $size == for-responsive-menu
+    @media (max-width: 700px)
+      @content
+  @else if $size == small-tablet-and-phone
+    @media (max-width: 850px)
+      @content
+  @else if $size == tablet-to-phone
+    @media (min-width: 730px) and (max-width: 900px)
+      @content
+  @else if $size == tablet-portrait-down
+    @media (max-width: 900px)
+      @content
+  @else if $size == tablet-medium-down
+    @media (max-width: 1040px)
+      @content
+  @else if $size == tablet-landscape-down
+    @media (max-width: 1260px)
+      @content
+  @else if $size == desktop-down
+    @media (max-width: 1430px)
+      @content
+
+@mixin skills-layout-small
+  display: grid
+  grid-template-columns: 1fr 1fr
+  padding-bottom: 60px
+  svg
+    grid-column: 1
+    grid-row: 1/4
+    height: 150px
+  p
+    grid-row: 3
+    grid-column: 2
+    justify-self: start
+    text-align: left
+    padding: 0
+    margin: 0
+  h4
+    grid-row: 2
+    grid-column: 2
+    justify-self: start
+    text-align: left
+  h3
+    grid-row: 1
+    grid-column: 2
+    justify-self: start
+    text-align: left
+    padding: 0
