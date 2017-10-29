@@ -236,7 +236,7 @@ header .header-text-1 {
 
 @media (max-height: 400px) and (max-width: 740px) {
   header .header-text-1 {
-    height: 35vh;
+    height: 40vh;
   }
 }
 
@@ -284,7 +284,7 @@ header .header-images-2 {
 
 @media (max-height: 400px) and (max-width: 740px) {
   header .header-images-2 {
-    height: 30vh;
+    height: 40vh;
   }
 }
 
@@ -389,6 +389,7 @@ header .lines .line1, header .lines .line2 {
 @media (max-height: 400px) and (max-width: 740px) {
   header .lines .line1, header .lines .line2 {
     width: 190px;
+    margin-top: -10px;
     height: 3px;
   }
 }
@@ -425,8 +426,8 @@ header .see-more-btn {
 
 @media (max-height: 400px) and (max-width: 740px) {
   header .see-more-btn {
-    height: 35vh;
-    align-items: flex-end;
+    height: 30vh;
+    align-items: center;
   }
 }
 
@@ -956,6 +957,7 @@ header .scroll-row {
 @media (max-height: 400px) and (max-width: 740px) {
   .examples .see-more-btn .lines .line1, .examples .see-more-btn .lines .line2 {
     width: 190px;
+    margin-top: -10px;
     height: 3px;
   }
 }
