@@ -10,48 +10,58 @@ header
   background: url("../images/donut.png"), url("../images/tomatoe.png"), $yellow
   background-repeat: no-repeat
   background-position: 5% 55%, 100% 45%
-  background-size: 600px, 550px
+  background-size: 37%, 33%
   @include header-media (large-desktop-down)
-    background-position: -10% 60%, 120% 50%
+    background-size: 40%, 36%
+    background-position: 0% 60%, 100% 50%
   @include header-media (medium-desktop-down)
-    background-size: 600px, 500px
+    background-size: 50%, 45%
     background-position: -5% 80%, 120% 30%
   @include header-media (small-desktop-down)
-    background-size: 650px, 550px
+    background-size: 60%, 45%
     background-position: -5% 90%, 120% 10%
   @include header-media (tablet-down)
-    background-size: 650px, 550px
+    background-size: 70%, 55%
     background-position: -15% 100%, 140% 0%
   @include header-media (small-tablet-down)
     background-size: 650px, 400px
     background-position: -100px 110%, 140% 0%
   @include header-media (phone-only)
-    background: url("../images/donut.png"), $yellow
-    background-repeat: no-repeat
-    background-size: 150%
-    background-position: 80% 80%
+    background: $yellow
+    min-height: 100%
+  @include media(landscape-phone)
+    background: $yellow
+    max-height: 100vh
   .header-text-1
     display: flex
     align-items: flex-end
     height: 30vh
     grid-row: 1
     grid-column: 1
-    @include header-media (phone-only)
-      font-size: 0.7em
-      align-items: flex-end
-      height: 20vh
+    @include media(landscape-phone)
+      padding-top: 30px
+      height: 30vh
     h1
       z-index: 6
       margin: 0 auto
+    @include media(landscape-phone)
+      font-size: 1.1em
+    @include header-media (phone-only)
+      font-size: 0.7em
+      span
+        display: block
+        font-size: 1.5em
   .header-images-2
     display: flex
     justify-content: stretch
     grid-row: 2
+    min-height: 200px
     height: 40vh
     @include header-media (small-tablet-down)
       height: 20vh
-    @include header-media (phone-only)
-      height: 60vh
+      min-height: 0
+    @include media(landscape-phone)
+      height: 30vh
     .glasses-svg
       z-index: 3
       height: 150px
@@ -64,22 +74,43 @@ header
         padding-top: 20px
       @include header-media (phone-only)
         width: 90%
-        //padding-top: 20px
-        //margin-top: -60px
+        margin-top: -20px
+      @include media(landscape-phone)
+        width: 50%
+        padding-top: 10px
   @include button
   .see-more-btn
     z-index: 5
+    display: flex
+    justify-content: center
     grid-row: 3
     height: 5vh
     grid-column: 1
+    min-height: 40px
+    @include header-media (tablet-down)
+      margin-top: -10vh
     @include header-media (small-tablet-down)
       margin-top: -5vh
+    @include media(landscape-phone)
+      height: 25vh
+      align-items: flex-end
     @include header-media (phone-only)
       grid-row: 3
-      height: 20vh
+      height: 10vh
       margin-top: 0
+      align-items: flex-start
+      justify-content: center
   .scroll-row
     grid-row: 4
     height: 25vh
-    @include header-media (phone-only)
+    min-height: 200px
+    padding-top: 15px
+    @include media(landscape-phone)
       height: 0
+    @include header-media (phone-only)
+      min-height: 0
+      height: 20vh
+      background:
+        image: url("../images/scroll.svg")
+        repeat: no-repeat
+        position: bottom center

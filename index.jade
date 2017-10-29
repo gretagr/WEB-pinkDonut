@@ -9,6 +9,12 @@ head
   script.
 body
   main
+    .menu-icon
+      svg(width='100px', height='100px')
+        path#first(d='M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80')
+        path#middle(d='M 30 50 L 70 50')
+        path#second(d='M 70 60 L 30  60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20')
+      .trigger
     nav.top.visible
       ul
         li 
@@ -25,7 +31,8 @@ body
       .header-text-1
         h1 TACOS CARDIGAN 
           br
-          | TRUFFAUT QUANTED!
+          | TRUFFAUT 
+          span QUANTED!
       section.header-images-2
         //.donut-image
         //  img(src="images/donut.png")
@@ -180,3 +187,4 @@ body
       h4.copy copyright 2015 &copy; by anna dadej
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
       script(src='js/script.js')
+      script(src="http://kodhus.com/moveit.js")

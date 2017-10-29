@@ -71,12 +71,11 @@ p {
 
 .top {
   z-index: 200;
-  grid-row: 1;
   position: fixed;
   width: 100%;
-  padding-top: 30px;
-  padding-left: 60px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-bottom: 40px;
   background: rgba(255, 213, 0, 0.7);
   opacity: 1;
   margin-top: 0;
@@ -136,6 +135,30 @@ p {
   transition: transform .2s, background-color .3s, color .3s;
 }
 
+.menu-icon {
+  z-index: 201;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 1.2%;
+  left: 2.5%;
+}
+
+.menu-icon svg path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.menu-icon .trigger {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "big-john";
   src: url("../fonts/big-john.otf") format("opentype");
@@ -149,32 +172,33 @@ header {
   background: url("../images/donut.png"), url("../images/tomatoe.png"), #FED418;
   background-repeat: no-repeat;
   background-position: 5% 55%, 100% 45%;
-  background-size: 600px, 550px;
+  background-size: 37%, 33%;
 }
 
 @media (max-width: 1440px) {
   header {
-    background-position: -10% 60%, 120% 50%;
+    background-size: 40%, 36%;
+    background-position: 0% 60%, 100% 50%;
   }
 }
 
 @media (max-width: 1200px) {
   header {
-    background-size: 600px, 500px;
+    background-size: 50%, 45%;
     background-position: -5% 80%, 120% 30%;
   }
 }
 
 @media (max-width: 1080px) {
   header {
-    background-size: 650px, 550px;
+    background-size: 60%, 45%;
     background-position: -5% 90%, 120% 10%;
   }
 }
 
 @media (max-width: 900px) {
   header {
-    background-size: 650px, 550px;
+    background-size: 70%, 55%;
     background-position: -15% 100%, 140% 0%;
   }
 }
@@ -188,10 +212,15 @@ header {
 
 @media (max-width: 600px) {
   header {
-    background: url("../images/donut.png"), #FED418;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: 80% 80%;
+    background: #FED418;
+    min-height: 100%;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 740px) {
+  header {
+    background: #FED418;
+    max-height: 100vh;
   }
 }
 
@@ -203,11 +232,10 @@ header .header-text-1 {
   grid-column: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-height: 600px) and (max-width: 740px) {
   header .header-text-1 {
-    font-size: 0.7em;
-    align-items: flex-end;
-    height: 20vh;
+    padding-top: 30px;
+    height: 30vh;
   }
 }
 
@@ -216,22 +244,40 @@ header .header-text-1 h1 {
   margin: 0 auto;
 }
 
+@media (max-height: 600px) and (max-width: 740px) {
+  header .header-text-1 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 600px) {
+  header .header-text-1 {
+    font-size: 0.7em;
+  }
+  header .header-text-1 span {
+    display: block;
+    font-size: 1.5em;
+  }
+}
+
 header .header-images-2 {
   display: flex;
   justify-content: stretch;
   grid-row: 2;
+  min-height: 200px;
   height: 40vh;
 }
 
 @media (max-width: 780px) {
   header .header-images-2 {
     height: 20vh;
+    min-height: 0;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-height: 600px) and (max-width: 740px) {
   header .header-images-2 {
-    height: 60vh;
+    height: 30vh;
   }
 }
 
@@ -258,6 +304,14 @@ header .header-images-2 .glasses-svg {
 @media (max-width: 600px) {
   header .header-images-2 .glasses-svg {
     width: 90%;
+    margin-top: -20px;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 740px) {
+  header .header-images-2 .glasses-svg {
+    width: 50%;
+    padding-top: 10px;
   }
 }
 
@@ -275,6 +329,22 @@ header .see {
   margin: 0 auto;
 }
 
+@media (max-width: 599px) {
+  header .see {
+    width: 110px;
+    height: 35px;
+    border: 3px solid black;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 740px) {
+  header .see {
+    width: 110px;
+    height: 35px;
+    border: 3px solid black;
+  }
+}
+
 header .line1, header .line2 {
   position: relative;
   z-index: 0;
@@ -284,6 +354,24 @@ header .line1, header .line2 {
   margin: auto;
   margin-bottom: 4px;
   margin-top: -16px;
+}
+
+@media (max-width: 599px) {
+  header .line1, header .line2 {
+    width: 190px;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: -12px;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 740px) {
+  header .line1, header .line2 {
+    width: 190px;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: -12px;
+  }
 }
 
 header .line1 {
@@ -296,9 +384,18 @@ header .line2 {
 
 header .see-more-btn {
   z-index: 5;
+  display: flex;
+  justify-content: center;
   grid-row: 3;
   height: 5vh;
   grid-column: 1;
+  min-height: 40px;
+}
+
+@media (max-width: 900px) {
+  header .see-more-btn {
+    margin-top: -10vh;
+  }
 }
 
 @media (max-width: 780px) {
@@ -307,22 +404,43 @@ header .see-more-btn {
   }
 }
 
+@media (max-height: 600px) and (max-width: 740px) {
+  header .see-more-btn {
+    height: 25vh;
+    align-items: flex-end;
+  }
+}
+
 @media (max-width: 600px) {
   header .see-more-btn {
     grid-row: 3;
-    height: 20vh;
+    height: 10vh;
     margin-top: 0;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 
 header .scroll-row {
   grid-row: 4;
   height: 25vh;
+  min-height: 200px;
+  padding-top: 15px;
+}
+
+@media (max-height: 600px) and (max-width: 740px) {
+  header .scroll-row {
+    height: 0;
+  }
 }
 
 @media (max-width: 600px) {
   header .scroll-row {
-    height: 0;
+    min-height: 0;
+    height: 20vh;
+    background-image: url("../images/scroll.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
   }
 }
 
@@ -767,6 +885,22 @@ header .scroll-row {
   margin: 0 auto;
 }
 
+@media (max-width: 599px) {
+  .examples .see-more-btn .see {
+    width: 110px;
+    height: 35px;
+    border: 3px solid black;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 740px) {
+  .examples .see-more-btn .see {
+    width: 110px;
+    height: 35px;
+    border: 3px solid black;
+  }
+}
+
 .examples .see-more-btn .line1, .examples .see-more-btn .line2 {
   position: relative;
   z-index: 0;
@@ -776,6 +910,24 @@ header .scroll-row {
   margin: auto;
   margin-bottom: 4px;
   margin-top: -16px;
+}
+
+@media (max-width: 599px) {
+  .examples .see-more-btn .line1, .examples .see-more-btn .line2 {
+    width: 190px;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: -12px;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 740px) {
+  .examples .see-more-btn .line1, .examples .see-more-btn .line2 {
+    width: 190px;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: -12px;
+  }
 }
 
 .examples .see-more-btn .line1 {

@@ -85,13 +85,20 @@
       display: block
       font-family: big-john
       text-align: center
-      //line-height: 30px
       background: $light-yellow
       border:  4px solid black
       border-radius: 20px
       height: 40px
       width: 130px
       margin: 0 auto
+      @include media(phone-only)
+        width: 110px
+        height: 35px
+        border:  3px solid black
+      @include media(landscape-phone)
+        width: 110px
+        height: 35px
+        border:  3px solid black
     .line1, .line2
       position: relative
       z-index: 0
@@ -101,6 +108,16 @@
       margin: auto
       margin-bottom: 4px
       margin-top: -16px
+      @include media(phone-only)
+        width: 190px
+        height: 3px
+        margin-bottom: 3px
+        margin-top: -12px
+      @include media(landscape-phone)
+        width: 190px
+        height: 3px
+        margin-bottom: 3px
+        margin-top: -12px
     .line1
       right: -15px
     .line2
