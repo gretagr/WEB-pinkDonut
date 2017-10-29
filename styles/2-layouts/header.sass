@@ -29,9 +29,11 @@ header
   @include header-media (phone-only)
     background: $yellow
     max-height: 100vh
+    min-height: 100%
   @include media(landscape-phone)
     background: $yellow
     max-height: 100vh
+    min-height: 100%
   .header-text-1
     display: flex
     align-items: flex-end
@@ -39,8 +41,9 @@ header
     grid-row: 1
     grid-column: 1
     @include media(landscape-phone)
-      padding-top: 30px
-      height: 30vh
+      height: 35vh
+    @include media(phone-only)
+      height: 25vh
     h1
       z-index: 6
       margin: 0 auto
@@ -92,19 +95,19 @@ header
     @include header-media (small-tablet-down)
       margin-top: -5vh
     @include media(landscape-phone)
-      height: 25vh
+      height: 35vh
       align-items: flex-end
     @include header-media (phone-only)
       grid-row: 3
-      height: 10vh
+      height: 25vh
       margin-top: 0
-      align-items: flex-start
+      align-items: center
       justify-content: center
   .scroll-row
     grid-row: 4
     height: 25vh
     min-height: 200px
-    padding-top: 15px
+    padding-top: 30px
     @include media(landscape-phone)
       height: 0
     @include header-media (phone-only)
