@@ -1,12 +1,10 @@
-//output: index.html
 doctype html
-html(lang="eng")
+html(lang="en")
 head
   meta(charset="utf-8")
   meta(http-equiv="X-UA-Compatible", content="IE=edge")
   meta(name="viewport", content="width=device-width, initial-scale= 1.0, maximum-scale=1, user-scalable=no")
-  link(rel="stylesheet", href="styles/styles.css")
-  script.
+  link(rel="stylesheet", href="styles/css/styles.css")
 body
   main
     .menu-icon
@@ -17,7 +15,7 @@ body
       .trigger
     nav.top.visible
       ul
-        li 
+        li
           a(href="#header") HOME
         li
           a(href="#services") WHAT I DO
@@ -29,9 +27,9 @@ body
           a(href="#contact") CONTACT
     header
       .header-text-1
-        h1 TACOS CARDIGAN 
+        h1 TACOS CARDIGAN
           br
-          | TRUFFAUT 
+          | TRUFFAUT
           span QUANTED!
       section.header-images-2
         //.donut-image
@@ -59,7 +57,7 @@ body
         .scroll
           svg(width='100px', height='400px')
             path(stroke-dasharray='15,20', d='M50 5 v 400 0')
-            rect(x='37', y='127', ry='15', width='26', height='50') 
+            rect(x='37', y='127', ry='15', width='26', height='50')
       .block3
         p Fingerstache green juice semiotics quinoa, truffaut letterpress wolf photo booth ugh biodiesel mumblecore brunch. Meh austin vinyl banh mi, gluten-free chillwave scenester kombucha street art. Before they sold out lumbersexual chillwave, cold-pressed mumblecore.
     section.service-details
@@ -67,7 +65,7 @@ body
         img.main(src="images/headphones.svg")
         img.lines(src="images/short-line.svg")
         h4 ULTRICIES
-        p Our dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. 
+        p Our dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag.
       .services5
         img.main(src="images/screen.svg")
         img.lines(src="images/short-line.svg")
@@ -77,7 +75,7 @@ body
         img.main(src="images/camera.svg")
         img.lines(src="images/short-line.svg")
         h4 CURABITUR
-        p Reamcatcher deep v austin schlitz drinking vinegar, messen ger bag slow-carb. Migas tumblr kombucha you probably hav en't heard of them +1 chicharrones. Tilde wayfarers craft beer stumptown.  
+        p Reamcatcher deep v austin schlitz drinking vinegar, messen ger bag slow-carb. Migas tumblr kombucha you probably hav en't heard of them +1 chicharrones. Tilde wayfarers craft beer stumptown.
     section#work.works
       .works1
       .works2
@@ -116,18 +114,18 @@ body
             rect(x='37', y='128', ry='15', width='26', height='50')
         .block3
           p Fingerstache green juice semiotics quinoa, truffaut letterpress wolf photo booth ugh biodiesel mumblecore brunch. Meh austin vinyl banh mi, gluten-free chillwave scenester kombucha street art. Before they sold out lumbersexual chillwave, cold-pressed mumblecore beard pickled letterpress normcore crucifix.
-      .skills2  
+      .skills2
         .block4
-          svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 256.4 258.1')
+          svg(id='first-svg' xmlns='http://www.w3.org/2000/svg', viewbox='0 0 256.4 258.1')
             circle(fill='#FDF8FC', stroke='#F4F4F4', stroke-width='4', stroke-miterlimit='10', cx='138.9', cy='139.8', r='115.4')
             path(fill='#FFF', stroke='#F4F4F4', stroke-width='4', stroke-miterlimit='10', d='M37.5 141c0 56 45.2 101.1 101.4 101.1S240.4 196 240.4 139.8 194 38 138 38v102l-100.5 1z')
             path(fill='#D7D2D6', stroke='#000', stroke-width='4', stroke-miterlimit='10', d='M138 38c56 0 102.4 45.6 102.4 101.8S195.2 242.1 139 242.1 37.5 197 37.5 141h-14c0 64 51.8 115.1 115.8 115.1S254.4 203.9 254.4 140 202 24 138 24v14z')
             path(fill='none', stroke='#000', stroke-width='4', stroke-miterlimit='10', d='M21 133h61M0 141h61M130 21v61M138 0v61')
           h3 75%
           h4 PHOTOSHOP
-          p Mustache butcher direct trade, locavore banjo flexitarian taxidermy swag poutine literally. Selvage bushwick pour-over hella, austin kogi tumblr 90's chartreuse tacos. 
+          p Mustache butcher direct trade, locavore banjo flexitarian taxidermy swag poutine literally. Selvage bushwick pour-over hella, austin kogi tumblr 90's chartreuse tacos.
         .block5
-          svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236 259.3')
+          svg(id='second-svg' xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236 259.3')
             circle(fill='#FDF8FC', stroke='#F4F4F4', stroke-width='4', stroke-miterlimit='10', cx='118.4', cy='138.9', r='115.4')
             path(fill='#FFF', stroke='#F4F4F4', stroke-width='4', stroke-miterlimit='10', d='M66.1 226.8c15.3 9.1 33.1 14.4 52.3 14.4 56.2 0 101.4-46.1 101.4-102.3S173.5 37.1 117.5 37.1v102l-51.4 87.7z')
             path(fill='#D7D2D6', stroke='#000', stroke-width='4', stroke-miterlimit='10', d='M58.4 238.4c17.6 10.7 38.3 16.8 60.4 16.8 63.9 0 115.1-52.2 115.1-116.1s-52.4-116-116.4-116v14c56 0 102.4 45.6 102.4 101.8s-45.2 102.3-101.4 102.3c-18 0-34.9-4.6-49.6-12.8-.9-.5-1.8-1-2.7-1.6')
@@ -136,7 +134,7 @@ body
           h4 ILLUSTRATOR
           p Viral actually PBR&B, portland wayfarers gluten-free pour-over. Pop-up kombucha chicharrones, YOLO mixtape celiac squid. Heirloom plaid everyday carry mustache.
         .block6
-          svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 256.7 257.4')
+          svg(id='third-svg' xmlns='http://www.w3.org/2000/svg', viewbox='0 0 256.7 257.4')
             circle(fill='#FDF8FC', stroke='#F4F4F4', stroke-width='4', stroke-miterlimit='10', cx='117.6', cy='139.8', r='115.4')
             path(fill='#FFF', stroke='#F4F4F4', stroke-width='4', stroke-miterlimit='10', d='M219 139.8C219 83.6 172.7 38 116.7 38v102l102.3-.2')
             path(fill='#D7D2D6', stroke='#000', stroke-width='4', stroke-miterlimit='10', d='M219 139.8C219 83.6 172.7 38 116.7 38V24c64 0 116.4 52.1 116.4 116')
@@ -152,10 +150,10 @@ body
         .line4
       .form
         form
-          p Name:   
+          p Name:
           input(type='text', name='firstname')
           br
-          p   Email:  
+          p   Email:
           input(type='email', name='email')
           br
           p Message:
@@ -186,5 +184,9 @@ body
           p contact@yoursite.com
       h4.copy copyright 2015 &copy; by anna dadej
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+      script(src='node_modules/vivus/dist/vivus.js')
+      <!-- build:js build/js/main.min.js -->
       script(src='js/script.js')
       script(src='js/moveit.js')
+      <!-- endbuild -->
+      

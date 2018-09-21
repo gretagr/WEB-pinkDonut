@@ -84,3 +84,7 @@ var destination = 0;
 var speed = 10;
 var scroller = null;
 //-----------------------funkcija 1 smooth scroll
+
+new Vivus('first-svg', {duration: 100});
+new Vivus('second-svg', {duration: 100});
+new Vivus('third-svg', {duration: 100});
