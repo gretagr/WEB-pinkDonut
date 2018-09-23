@@ -731,6 +731,8 @@ header {
       @media (max-width: 1040px) {
         .about .skills2 svg {
           height: 150px; } }
+    .about .skills2 canvas {
+      max-width: 33%; }
     .about .skills2 h3, .about .skills2 p {
       padding: 20px; }
     .about .skills2 h3 {
