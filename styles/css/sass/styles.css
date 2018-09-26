@@ -10,7 +10,8 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   background: #FDF8FC;
@@ -628,6 +629,9 @@ header {
   max-width: 80%;
   margin: 0 auto;
   padding-bottom: 60px; }
+  @media (max-width: 599px) {
+    .about {
+      max-width: 100%; } }
   .about .skills1 {
     display: grid;
     grid-template-columns: 4fr 1fr 4fr; }
@@ -726,11 +730,6 @@ header {
     @media (max-width: 850px) {
       .about .skills2 {
         padding-top: 40px; } }
-    .about .skills2 svg {
-      height: 200px; }
-      @media (max-width: 1040px) {
-        .about .skills2 svg {
-          height: 150px; } }
     .about .skills2 canvas {
       max-width: 33%; }
     .about .skills2 h3, .about .skills2 p {
@@ -755,7 +754,8 @@ header {
           display: grid;
           grid-template-columns: 1fr 1fr;
           padding-bottom: 60px; }
-          .about .skills2 .block4 svg {
+          .about .skills2 .block4 canvas {
+            margin: 0 auto;
             grid-column: 1;
             grid-row: 1/4;
             height: 150px; }
@@ -785,7 +785,8 @@ header {
           display: grid;
           grid-template-columns: 1fr 1fr;
           padding-bottom: 60px; }
-          .about .skills2 .block5 svg {
+          .about .skills2 .block5 canvas {
+            margin: 0 auto;
             grid-column: 1;
             grid-row: 1/4;
             height: 150px; }
@@ -815,7 +816,8 @@ header {
           display: grid;
           grid-template-columns: 1fr 1fr;
           padding-bottom: 60px; }
-          .about .skills2 .block6 svg {
+          .about .skills2 .block6 canvas {
+            margin: 0 auto;
             grid-column: 1;
             grid-row: 1/4;
             height: 150px; }
@@ -1000,15 +1002,16 @@ header {
       text-align: center;
       margin: 0 auto;
       padding-bottom: 10px; } }
-  .social img {
+  .social a img {
     grid-row: 1;
     max-height: 55px;
     padding-top: 50px;
     padding-left: 10px; }
     @media (max-width: 850px) {
-      .social img {
+      .social a img {
         padding-top: 20px;
-        padding-bottom: 20px; } }
+        padding-bottom: 20px;
+        width: 30px !important; } }
   .social .adress {
     grid-row: 2;
     grid-column: 1/6;

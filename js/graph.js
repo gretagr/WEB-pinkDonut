@@ -15,8 +15,9 @@ window.requestAnimationFrame = animFrame;
 
 
 // --------- get all canvas elements
+let canvas = document.querySelectorAll('canvas');
 
-document.querySelectorAll('canvas').forEach(canvas => {
+canvas.forEach(canvas => {
   let finishCount = getFinish(canvas);
   const ctx = canvas.getContext('2d');
 
@@ -128,4 +129,26 @@ function getFinish(canvas) {
     return 25;
   }
   else return;
+}
+
+// animate count
+
+document.querySelectorAll('.chart').forEach(counter => {
+  counter.classList.contains('ps') ? setNum(75, counter) :
+  counter.classList.contains('ai') ? setNum(65, counter) :
+  counter.classList.contains('knit') ? setNum(25, counter) : null
+})
+
+
+// TODO: sureguliuoti laiko ir rato apsisukimo greicius
+
+function setNum(num, counter) {
+  let startPoint = 0;
+  let interval = setInterval(function () {
+    counter.innerHTML = startPoint+ '%';
+    if (startPoint >= num) {
+      clearInterval(interval);
+    }
+    startPoint++;
+  }, 20)
 }
